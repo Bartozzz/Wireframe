@@ -7,10 +7,6 @@ gulp.task( "watch", [ "sass", "docs" ], () => {
         open : false,
 
         server : {
-            routes : {
-                "/css" : path.resolve( __dirname, "../css" )
-            },
-
             baseDir : path.resolve( __dirname, "../docs/_site" ),
             index   : "index.html"
         }

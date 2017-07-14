@@ -6,8 +6,9 @@ const minify = require( "gulp-clean-css" );
 const prefix = require( "gulp-autoprefixer" );
 
 gulp.task( "sass", () => {
-    const src = path.resolve( __dirname, "../scss" );
-    const out = path.resolve( __dirname, "../css" );
+    const src  = path.resolve( __dirname, "../scss" );
+    const outA = path.resolve( __dirname, "../css" );
+    const outB = path.resolve( __dirname, "../docs/assets" );
 
     return gulp.src( `${src}/index.scss` )
         .pipe( sass().on( "error", sass.logError ) )
@@ -20,5 +21,6 @@ gulp.task( "sass", () => {
             ]
         } ) )
         .pipe( concat( "index.css" ) )
-        .pipe( gulp.dest( out ) );
+        .pipe( gulp.dest( outA ) )
+        .pipe( gulp.dest( outB ) );
 } );
