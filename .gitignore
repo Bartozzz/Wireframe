@@ -1,6 +1,5 @@
 # Build ignores
 /node_modules
-/docs/assets/index.css
 
 # SASS ignores
 .sass-cache/
