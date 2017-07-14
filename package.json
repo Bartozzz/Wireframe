@@ -1,0 +1,33 @@
+{
+    "name": "wireframe",
+    "version": "0.0.1",
+    "description": "",
+    "license": "MIT",
+    "author": "Bartosz Łaniewski <laniewski.bartozzz@gmail.com> (http://laniewski.me)",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bartozzz/wireframe.git"
+    },
+    "bugs": {
+        "url": "https://github.com/bartozzz/wireframe/issues"
+    },
+    "dependencies": {
+        "normalize.css": "latest"
+    },
+    "devDependencies": {
+        "node-sass": "https://github.com/sass/node-sass/tarball/master",
+        "require-dir": "^0.3.2",
+        "browser-sync": "^2.18.12",
+        "gulp": "^3.9.1",
+        "gulp-sass": "^3.1.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-clean-css": "^3.7.0",
+        "gulp-autoprefixer": "^4.0.0"
+    },
+    "scripts": {
+        "clean": "rm -rf css",
+        "build": "gulp sass",
+        "watch": "gulp watch",
+        "docs": "gulp docs"
+    }
+}

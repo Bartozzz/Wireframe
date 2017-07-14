@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#000000" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no, minimal-ui">
+        <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>
+            {% if page.title %}
+                {{ site.title | escape }} &middot; {{ page.title | escape }}
+            {% else %}
+                {{ site.title | escape }}
+            {% endif %}
+        </title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ "/css/index.css" | relative_url }}">
+        <link rel="stylesheet" href="{{ "/assets/styles/index.css" | relative_url }}">
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    </head>
+
+    <body class="app">
+        {% if page.drawer %}
+            {% include drawer.html %}
+        {% endif %}
+
+        <main class="app-container">
+            {% include header.html %}
+
+            <div class="app-scroll">
+                {{ content }}
+
+                {% include footer.html %}
+            </div>
+        </main>
+    </body>
+</html>

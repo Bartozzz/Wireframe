@@ -1,0 +1,19 @@
+# Site settings
+title       : Wireframe
+email       : laniewski.bartozzz@gmail.com
+description : Wireframe, a flexible, modular SCSS framework for rapid application prototyping.
+baseurl     : ""
+url         : ""
+release     : 0.0.1
+
+# Build settings
+markdown    : kramdown
+theme       : null
+
+# Jekyll configuration
+gems:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock

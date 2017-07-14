@@ -1,0 +1,48 @@
+.typo {
+    & > p {
+        font-style: normal;
+        font-family: $font-main;
+
+        @include responsive-type(1rem, 1rem, $font-size);
+    }
+
+    & > h1, & > h2, & > h3, & > h4, & > h5,& >  h6,
+    & > .h1, & > .h2, & > .h3, & > .h4, & > .h5, & > .h6 {
+        margin: 0;
+        padding: 0;
+
+        font-style: normal;
+        font-family: $font-head;
+
+        text-rendering: geometricPrecision;
+    }
+
+    & > h1, & > .h1 {
+        @include responsive-type(2rem, 3.5rem, $font-size);
+    }
+
+    & > h2, & > .h2 {
+        @include responsive-type(2rem, 3rem, $font-size);
+    }
+
+    & > h3, & > .h3 {
+        @include responsive-type(2rem, 2.5rem, $font-size);
+    }
+
+    & > h4, & > .h4 {
+        @include responsive-type(2rem, 2rem, $font-size);
+    }
+
+    & > h5, & > .h5 {
+        @include responsive-type(2rem, 1.5rem, $font-size);
+    }
+
+    & > h6, & > .h6 {
+        @include responsive-type(1rem, 1rem, $font-size);
+    }
+
+    & > mark {
+        background-color: rgba(yellow, .5);
+        padding: 0 .5rem;
+    }
+}

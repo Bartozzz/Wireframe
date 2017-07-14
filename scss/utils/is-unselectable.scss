@@ -1,0 +1,9 @@
+.is-unselectable {
+    &, & > * {
+        // iOS:
+        -webkit-touch-callout: none;
+
+        // Browsers:
+        user-select: none;
+    }
+}

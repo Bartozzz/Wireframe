@@ -1,0 +1,30 @@
+.app {
+    display: flex;
+    flex-direction: row;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: $color-background;
+
+    &-scroll {
+        position: relative;
+
+        flex: 1;
+
+        width: 100%;
+        height: auto;
+
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    &-container {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

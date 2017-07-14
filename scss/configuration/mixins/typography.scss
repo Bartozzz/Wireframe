@@ -1,0 +1,48 @@
+// @include responsive-type('14px@400px', '50px@1900px', '16px');
+// @include responsive-type('1.2@400px', '1.05@1900px', '16px');
+@mixin responsive-type($min, $max, $base) {
+    $min-vw : $mobile;
+    $max-vw : $desktop;
+
+    // Check if value is using the "@" syntax
+    @if (type-of($min) == "string") {
+        @if (str-index($min, "@")) {
+            $list   : split-str($min, "@");
+            $min    : to-number(unquote(nth($list, 1)));
+            $min-vw : to-number(unquote(nth($list, 2)));
+        }
+    }
+
+    @if (type-of($max) == "string") {
+        @if (str-index($max, "@")) {
+            $list   : split-str($max, "@");
+            $max    : to-number(unquote(nth($list, 1)));
+            $max-vw : to-number(unquote(nth($list, 2)));
+        }
+    }
+
+    $line-height: max(ceil(strip-units($max)), 2);
+
+    // Set the styles:
+    font-size: calc(1vw + 1vh + .5vmin) / $max;
+    line-height: #{$line-height}rem;
+
+    margin: #{2 + ($line-height%2)}rem 0 1rem 0;
+    padding: 0;
+
+    /*@include min-screen($min-vw) {
+        font-size: calc(#{$min} + #{strip-unit($max - $min)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
+        line-height: 2em;
+
+        margin: 0 0 2em 0;
+        padding: 0;
+    }
+
+    @include min-screen($max-vw) {
+        font-size: $max;
+        line-height: 2em;
+
+        margin: 0 0 2em 0;
+        padding: 0;
+    }*/
+}

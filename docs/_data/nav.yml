@@ -1,0 +1,32 @@
+#- title: Getting started
+#  pages:
+#    - title: Introduction
+#    - title: Download
+
+- title: Components
+  pages:
+    - title: Alerts
+    - title: Badges
+    - title: Boxes
+    - title: Forms
+
+- title: Layout
+  pages:
+    - title: Overview
+    - title: Header
+    - title: Footer
+    - title: Content
+    - title: Drawer
+    - title: Grid
+
+- title: Content
+  pages:
+    - title: Typography
+    - title: Tables
+
+- title: Utilities
+  pages:
+    - title: Align
+    - title: Display
+    - title: Prototyping
+    - title: Responsive

@@ -1,0 +1,23 @@
+.footer {
+    position: relative;
+
+    display: flex;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    flex-basis: auto;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 0 1rem 2rem;
+    margin: 0;
+
+    width: 100%;
+    height: auto;
+
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: $color-border;
+
+    z-index: 1;
+}

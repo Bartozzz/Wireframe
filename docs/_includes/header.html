@@ -1,0 +1,29 @@
+<header class="header is-unselectable">
+    <div class="content align-between">
+        <div class="header-menu">
+            <div class="drawer-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            {% if page.drawer != true %}
+                <div class="header-menu-logo">
+                    <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+                </div>
+            {% endif %}
+        </div>
+
+        <nav class="header-menu">
+            <ul>
+                <li class="header-menu-item {% if page.layout == "docs" %}is-active{% endif %}">
+                    <a href="{{ site.baseurl }}/docs/">Docs</a>
+                </li>
+
+                <li class="header-menu-item {% if page.layout == "examples" %}is-active{% endif %}">
+                    <a href="{{ site.baseurl }}/examples/">Examples</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

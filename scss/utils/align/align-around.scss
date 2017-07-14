@@ -1,0 +1,6 @@
+.align-around {
+    @extend .is-flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+}

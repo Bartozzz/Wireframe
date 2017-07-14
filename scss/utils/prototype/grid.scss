@@ -1,0 +1,31 @@
+$grid-width  : 1rem !default;
+$grid-height : 1rem !default;
+$grid-color  : #f3f3f3 !default;
+
+.prototype-grid {
+    background-size:
+        $grid-width $grid-height,
+        $grid-width $grid-height;
+
+    background-image: linear-gradient(to right, $grid-color 1px, transparent 1px),
+                      linear-gradient(to bottom, $grid-color 1px, transparent 1px);
+}
+
+.prototype-grid-horizontal {
+    background-size:
+        $grid-width*2 $grid-height*2,
+        $grid-width/2 $grid-height/2;
+
+    background-position:
+        1rem 1rem,
+        0 0;
+
+    background-image:
+        linear-gradient(to bottom, darken($grid-color, 7.5%) 1px, transparent 1px),
+        linear-gradient(to bottom, $grid-color 1px, transparent 1px);
+}
+
+.prototype-grid-vertical {
+    background-size: $grid-width $grid-height;
+    background-image: linear-gradient(to right, $grid-color 1px, transparent 1px);
+}

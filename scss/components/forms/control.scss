@@ -1,0 +1,12 @@
+.control {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    margin: .5rem 0 2rem;
+    padding: 0;
+
+    &.is-small {
+        width: 18rem;
+    }
+}

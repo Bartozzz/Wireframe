@@ -1,0 +1,36 @@
+<menu class="drawer is-unselectable">
+    <header class="drawer-header">
+        <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    </header>
+
+    <ul class="drawer-content menu">
+        {% assign page_slug = page.url | split: '/' | last %}
+        {% for group in site.data.nav %}
+            {% assign link = group.pages | first %}
+            {% assign link_slug = link.title | slugify %}
+            {% assign group_slug = group.title | slugify %}
+            {% assign active = nil %}
+
+            <li class="menu-item is-title {% if page.group == group_slug %}is-active{% endif %}">
+                <a href="{{ site.baseurl }}/docs/{{ group_slug }}/{{ link_slug }}.html">
+                    {{ group.title }}
+                </a>
+            </li>
+
+            {% for doc in group.pages %}
+                {% assign doc_slug = doc.title | slugify %}
+                {% assign active = nil %}
+
+                <li class="menu-item {% if page.group == group_slug and page_slug == doc_slug %}is-active{% endif %}">
+                    <a href="{{ site.baseurl }}/docs/{{ group_slug }}/{{ doc_slug }}.html">
+                        {{ doc.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        {% endfor %}
+    </ul>
+
+    <header class="drawer-footer">
+        Version: {{ site.release }}
+    </header>
+</menu>

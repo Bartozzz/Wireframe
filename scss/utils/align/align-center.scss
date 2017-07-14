@@ -1,0 +1,6 @@
+.align-center {
+    @extend .is-flex;
+
+    justify-content: center;
+    text-align: center;
+}

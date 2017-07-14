@@ -1,0 +1,41 @@
+.xs-show {
+    display: none !important;
+}
+
+@include max-screen($mobile) {
+    .xs-hide {
+        display: none !important;
+    }
+
+    .xs-show {
+        display: block !important;
+    }
+}
+
+.sm-show {
+    display: none !important;
+}
+
+@include max-screen($tablet) {
+    .sm-hide {
+        display: none !important;
+    }
+
+    .sm-show {
+        display: block !important;
+    }
+}
+
+.lg-show {
+    display: none !important;
+}
+
+@include max-screen($desktop) {
+    .lg-hide {
+        display: none !important;
+    }
+
+    .lg-show {
+        display: block !important;
+    }
+}

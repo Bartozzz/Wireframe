@@ -1,0 +1,30 @@
+.content {
+    position: relative;
+    display: flex;
+
+    flex-direction: inherit;
+
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    max-width: $desktop;
+    width: 100%;
+
+    @include max-screen($mobile) {
+        margin: 0;
+        padding: 0;
+    };
+
+    &.is-hero {
+        max-width: 100%;
+
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: $color-border;
+    }
+
+    &.is-full {
+        height: auto;
+        min-height: 100%;
+    }
+}

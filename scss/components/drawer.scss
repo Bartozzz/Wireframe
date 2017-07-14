@@ -1,0 +1,94 @@
+$spacing : 21px - $font-size + 1;
+
+.drawer-toggle {
+    display: none;
+
+    width: 21px;
+    height: 21px;
+
+    padding: 0;
+    margin: 0 ($font-size + $spacing) 0 $spacing;
+
+    cursor: pointer;
+
+    & > span {
+        display: block;
+        width: 100%;
+        height: 3px;
+
+        padding: 0;
+        margin: 2px 0 4px;
+
+        background-color: $color-text;
+    }
+
+    @include max-screen($tablet) {
+        display: block;
+    };
+}
+
+.drawer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    margin: 0;
+    padding: 0;
+
+    width: 16rem;
+    max-width: 300px;
+
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: $color-border;
+    background-color: $color-background;
+
+    transition: left 200ms ease;
+    z-index: 2;
+
+    &-header,
+    &-footer {
+        display: flex;
+        flex: 1 1 auto;
+
+        align-items: center;
+        justify-content: center;
+
+        min-height: 4rem;
+
+        @include max-screen($tablet) {
+            height: 3.5rem;
+        }
+    }
+
+    &-header {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: $color-border;
+    }
+
+    &-footer {
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: $color-border;
+    }
+
+    &-content {
+        flex-grow: 1;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    @include max-screen($tablet) {
+        position: fixed;
+        top: 0; left: -300px;
+
+        height: 100%;
+
+        &.is-open {
+            left: 0;
+        }
+    }
+}

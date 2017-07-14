@@ -1,0 +1,12 @@
+# Build ignores
+/node_modules
+
+# SASS ignores
+.sass-cache/
+*.css.map
+
+# Logs and cache
+*.npm
+*.log
+*.tgz
+npm-debug.log*

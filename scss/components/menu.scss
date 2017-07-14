@@ -1,0 +1,65 @@
+.menu {
+    display: block;
+    padding: 8px 0;
+
+    width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    &-item,
+    &-items {
+        margin: 0;
+    }
+
+    &-item {
+        position: relative;
+        display: flex;
+        flex: 1 1 auto;
+
+        transition: all 200ms ease;
+
+        &:hover {
+            background-color: rgba($color-border, .5);
+        }
+
+        &:active {
+            background-color: rgba($color-border, .75);
+        }
+
+        &.is-title {
+            font-weight: 900;
+
+            &:not(:last-of-type) {
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: $color-border;
+            }
+
+            &:not(:first-of-type) {
+                border-top-width: 1px;
+                border-top-style: solid;
+                border-top-color: $color-border;
+            }
+        }
+
+        a {
+            display: flex;
+            flex: 1;
+
+            color: $color-text;
+
+            cursor: pointer;
+            overflow: hidden;
+
+            margin: 0;
+            padding: $font-size - 1px 1rem;
+        }
+    }
+
+    // Spacing for nested items
+    &-items > &-item a {
+        padding-left: 2rem;
+    }
+}
