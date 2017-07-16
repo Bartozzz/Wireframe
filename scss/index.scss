@@ -33,17 +33,18 @@
 @import "content/typography",
         "content/table";
 
+@import "layout/app",
+        "layout/block",
+        "layout/content",
+        "layout/drawer",
+        "layout/footer",
+        "layout/header";
+
 @import "components/forms/control",
         "components/forms/buttons",
         "components/forms/inputs",
-        "components/app",
         "components/box",
         "components/grid",
         "components/menu",
-        "components/block",
         "components/alerts",
-        "components/badges",
-        "components/header",
-        "components/footer",
-        "components/drawer",
-        "components/content";
+        "components/badges";
