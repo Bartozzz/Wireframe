@@ -1,8 +1,5 @@
 .content {
     position: relative;
-    display: flex;
-
-    flex-direction: inherit;
 
     margin: 0 auto;
     padding: 0 2rem;
@@ -25,7 +22,5 @@
 
     &.is-full {
         flex: 1;
-        height: auto;
-        min-height: 100%;
     }
 }
