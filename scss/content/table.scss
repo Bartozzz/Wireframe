@@ -25,6 +25,10 @@
         }
     }
 
+    &.is-fixed {
+        table-layout: fixed;
+    }
+
     th, td {
         vertical-align: top;
 
