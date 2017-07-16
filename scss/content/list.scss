@@ -1,17 +1,39 @@
 .list {
     position: relative;
 
+    display: flex;
+    flex-direction: column;
+
     padding: 0;
     margin: 0;
 
     list-style: none;
 
-    &.is-inline {
+    &.is-inline,
+    &.is-stacking {
+        flex-direction: row;
+
         li {
             display: inline-flex;
 
             margin: 0 .75rem 0 0;
             padding: 0;
+
+            & > .button {
+                margin: 0;
+            }
+        }
+    }
+
+    &.is-stacking {
+        @include max-screen($mobile) {
+            flex-direction: column;
+        }
+    }
+
+    &.is-expanded {
+        li {
+            flex: 1;
         }
     }
 }
