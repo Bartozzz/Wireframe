@@ -12,7 +12,7 @@ $ npm install wireframe-framework
 
 **Copy/paste (not recommended):**
 
-You can download Wireframe and save it into your project’s `css` directory. This method is not recommended because you lose the ability to easily and quickly manage and update inuitcss as a dependency.
+You can download Wireframe and save it into your project’s `css` directory. This method is not recommended because you lose the ability to easily and quickly manage and update Wireframe as a dependency.
 
 ## Getting started
 
