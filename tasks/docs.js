@@ -3,7 +3,6 @@ const path  = require( "path" );
 const gulp  = require( "gulp" );
 const sync  = require( "browser-sync" ).create();
 
-
 gulp.task( "docs", done => {
     const jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 

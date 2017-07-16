@@ -16,7 +16,7 @@ gulp.task( "sass", () => {
         .pipe( prefix( {
             browsers : [
                 "last 5 versions",
-                "ie >= 9",
+                "ie >= 10",
                 "Android >= 4.1"
             ]
         } ) )
