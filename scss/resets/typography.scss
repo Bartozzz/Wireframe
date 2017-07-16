@@ -41,8 +41,12 @@
         @include responsive-type(1rem, 1rem, $font-size);
     }
 
-    & > mark {
-        background-color: rgba(yellow, .5);
+    mark {
+        background-color: rgba(yellow, .35);
         padding: 0 .5rem;
+
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: rgba(yellow, .65);
     }
 }
