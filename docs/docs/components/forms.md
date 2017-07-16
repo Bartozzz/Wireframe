@@ -19,37 +19,31 @@ Every form element should be wrapped by a `.control` element.
 ### Buttons
 
 <div class="control">
-    <button class="button">Button</button>
     <button class="button"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
-    <button class="button is-outline">Outlined button outline</button>
+    <button class="button is-rounded">Rounded button</button>
+    <button class="button is-outline">Outlined button</button>
     <button class="button is-invisible">Invisible button</button>
+    <button class="button is-disabled">Disabled button</button>
     <button class="button is-full">Wull-width button</button>
-</div>
-
-<div class="control">
-    <button class="button is-rounded">Button</button>
-    <button class="button is-rounded"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
-    <button class="button is-rounded is-outline">Outlined button outline</button>
-    <button class="button is-rounded is-invisible">Invisible button</button>
-    <button class="button is-rounded is-full">Wull-width button</button>
 </div>
 
 {% highlight html %}
-<div class="control">
-    <button class="button">Button</button>
-    <button class="button"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
-    <button class="button is-outline">Outlined button outline</button>
-    <button class="button is-invisible">Invisible button</button>
-    <button class="button is-full">Wull-width button</button>
-</div>
+<button class="button"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
+<button class="button is-rounded">Rounded button</button>
+<button class="button is-outline">Outlined button</button>
+<button class="button is-invisible">Invisible button</button>
+<button class="button is-disabled">Disabled button</button>
+<button class="button is-full">Wull-width button</button>
+{% endhighlight %}
+
+You can mix classes together:
 
 <div class="control">
-    <button class="button is-rounded">Button</button>
-    <button class="button is-rounded"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
-    <button class="button is-rounded is-outline">Outlined button outline</button>
-    <button class="button is-rounded is-invisible">Invisible button</button>
-    <button class="button is-rounded is-full">Wull-width button</button>
+    <button class="button is-rounded is-outline"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
 </div>
+
+{% highlight html %}
+<button class="button is-rounded is-outline"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
 {% endhighlight %}
 
 ### Inputs
