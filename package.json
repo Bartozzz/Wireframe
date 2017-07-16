@@ -1,9 +1,10 @@
 {
-    "name": "wireframe",
-    "version": "0.0.1",
+    "name": "wireframe-framework",
+    "version": "0.0.11",
     "description": "",
     "license": "MIT",
     "author": "Bartosz Łaniewski <laniewski.bartozzz@gmail.com> (http://laniewski.me)",
+    "main": "scss/index.scss",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/bartozzz/wireframe.git"
@@ -28,6 +29,7 @@
         "clean": "rm -rf css",
         "build": "gulp sass",
         "watch": "gulp watch",
-        "docs": "gulp docs"
+        "docs": "npm run prepare && gulp docs",
+        "prepare": "npm run clean && npm run build"
     }
 }
