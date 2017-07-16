@@ -51,13 +51,13 @@
 
     &-menu {
         display: flex;
+        align-items: center;
 
         &.is-fluid {
             overflow-y: hidden;
             overflow-x: auto;
 
             height: 100%;
-            align-items: center;
 
             &:before,
             &:after {
