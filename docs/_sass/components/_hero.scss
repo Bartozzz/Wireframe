@@ -1,11 +1,40 @@
+@mixin shade($color, $flashColor, $borderColor) {
+    color: $color;
+    text-shadow:
+        -1.5px -1.5px 0 $flashColor,
+        1.5px  -3px   0 $borderColor,
+        1.5px  1.5px  0 $borderColor,
+        -3px   -3px   0 $borderColor,
+        -3px   1.5px  0 $borderColor;
+}
+
 .hero {
+    display: flex;
+    flex-grow: 1;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #e4e4e4;
+
     h1 {
-        font-size: 5rem;
+        display: none;
+
+        font-size: 10em;
+
+        @include shade(#e4e4e4, #ffffff, #d2d2d2);
+        //@include shade(#efefef, #ffffff, #dbdbdb);
+        //@include shade(#d5e7ef, #ffffff, #99b4c0);
     }
 
-    h2 {
-        font-size: 2rem;
+    @media screen and (max-height: 700px) {
+        display: none;
+    }
 
-        max-width: 650px;
+    @media screen and (max-width: 780px) {
+        display: none;
     }
 }

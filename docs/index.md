@@ -2,11 +2,8 @@
 layout: default
 ---
 
-<div class="content is-full is-hero align-middle align-center prototype-grid">
-    <div class="hero typo">
-        <h1>Wireframe</h1>
-        <h2>A <mark>flexible</mark> and <mark>modular</mark> SCSS framework for rapid webiste prototyping.</h2>
-    </div>
+<div class="hero prototype-grid">
+    <h1>Wireframe</h1>
 </div>
 
 <div>
