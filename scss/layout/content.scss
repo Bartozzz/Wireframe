@@ -24,6 +24,7 @@
     }
 
     &.is-full {
+        flex: 1;
         height: auto;
         min-height: 100%;
     }
