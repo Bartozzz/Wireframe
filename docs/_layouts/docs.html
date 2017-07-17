@@ -6,6 +6,13 @@ layout: default
     <div class="block typo">
         <h1>{{ page.title | escape }}</h1>
 
+        {% if page.files %}
+{% highlight scss %}
+{% for file in page.files %}
+@import "{{ file }}";{% endfor %}
+{% endhighlight %}
+        {% endif %}
+
         {{ content }}
     </div>
 </article>

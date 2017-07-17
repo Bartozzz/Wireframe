@@ -2,11 +2,13 @@
 layout: docs
 drawer: true
 title: Alerts
+files:
+    - wireframe-framework/scss/components/alert.scss
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-## Basic alerts
+## Default
 
 <div class="alert">
     <strong>Hi there!</strong> Welcome on our website!
@@ -57,7 +59,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         <span>&times;</span>
     </button>
 
-    <div class="alert-content">
+    <div class="alert-conten">
         <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
     </div>
 </div>
