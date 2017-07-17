@@ -1,9 +1,19 @@
 .typo {
-    & > p {
+    & > p,
+    & > ul {
         font-style: normal;
         font-family: $font-main;
+    }
 
+    & > p {
         @include responsive-type(1rem, 1rem, $font-size);
+    }
+
+    & > ul {
+        line-height: 2rem;
+
+        padding: 0 1rem;
+        margin: 0 0 1rem 0;
     }
 
     & > h1, & > h2, & > h3, & > h4, & > h5,& >  h6,
