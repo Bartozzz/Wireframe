@@ -20,4 +20,53 @@
     border-top-color: $color-border;
 
     z-index: 1;
+
+    &.is-menu {
+        padding: 0;
+
+        height: 4rem;
+        width: 100%;
+
+        @include max-screen($tablet) {
+            height: 3rem;
+        }
+    }
+
+    &-icons {
+        flex-direction: row;
+
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+
+        &, li, a {
+            display: flex;
+            flex-grow: 1;
+
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            height: 100%;
+            width: 100%;
+        }
+
+        & > li {
+            border-right-width: 1px;
+            border-right-style: solid;
+            border-right-color: $color-border;
+
+            & > a {
+                font-size: 1.25rem;
+                color: $color-text;
+
+                transition: all 200ms ease;
+
+                &:hover {
+                    background-color: $color-border;
+                }
+            }
+        }
+    }
 }

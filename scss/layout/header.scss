@@ -25,19 +25,6 @@
         height: 3.5rem;
     }
 
-    &.is-bottom {
-        padding: 0;
-
-        border-bottom-width: 0;
-        border-top-width: 1px;
-        border-top-style: solid;
-        border-top-color: $color-border;
-
-        @include max-screen($tablet) {
-            height: 3rem;
-        }
-    }
-
     ul {
         display: flex;
         flex-direction: row;
@@ -105,37 +92,6 @@
 
             &.is-active a {
                 opacity: 1;
-            }
-        }
-    }
-
-    &-icons {
-        &, li, a {
-            display: flex;
-            flex-grow: 1;
-
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-
-            height: 100%;
-            width: auto;
-        }
-
-        & > li {
-            border-right-width: 1px;
-            border-right-style: solid;
-            border-right-color: $color-border;
-
-            & > a {
-                font-size: 1.25rem;
-                color: $color-text;
-
-                transition: all 200ms ease;
-
-                &:hover {
-                    background-color: $color-border;
-                }
             }
         }
     }
