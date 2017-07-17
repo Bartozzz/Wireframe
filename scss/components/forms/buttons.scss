@@ -1,3 +1,19 @@
+@mixin state-button($color) {
+    background-color: darken($color, 15%);
+    border-color: darken($color, 15%);
+    color: darken($color, 60%);
+
+    &:hover {
+        background-color: darken($color, 20%);
+        border-color: darken($color, 20%);
+    }
+
+    &:active {
+        background-color: darken($color, 30%);
+        border-color: darken($color, 30%);
+    }
+}
+
 .button {
     position: relative;
     display: inline-flex;
@@ -33,15 +49,30 @@
     overflow: hidden;
 
     &:hover {
-        transform: scale(1.05);
+        background-color: darken($color-border, 5%);
+        border-color: darken($color-border, 5%);
     }
 
     &:active {
-        transform: scale(1.10);
+        background-color: darken($color-border, 10%);
+        border-color: darken($color-border, 10%);
     }
+
+    &.is-info       { @include state-button( $color-info ); }
+    &.is-warning    { @include state-button( $color-warning ); }
+    &.is-danger     { @include state-button( $color-danger ); }
+    &.is-success    { @include state-button( $color-success ); }
 
     &.is-rounded {
         border-radius: 20px;
+    }
+
+    &.pill-left {
+        border-radius: 20px 0 0 20px;
+    }
+
+    &.pill-right {
+        border-radius: 0 20px 20px 0;
     }
 
     &.is-outline {
@@ -69,7 +100,7 @@
 
         &:hover,
         &:active {
-            transform: none;
+            background-color: $color-border !important;
         }
     }
 
