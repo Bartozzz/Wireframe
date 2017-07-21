@@ -103,6 +103,15 @@ Every form element should be wrapped by a `.control` element.
     <label class="label">Email</label>
 </div>
 
+<div class="control is-small">
+    <select class="input">
+        <option value="1">Value 1</option>
+        <option value="2">Value 2</option>
+        <option value="3">Value 3</option>
+    </select>
+    <label class="label">Select</label>
+</div>
+
 {% highlight html %}
 <div class="control is-small">
     <input class="input" placeholder="John" />
@@ -117,5 +126,15 @@ Every form element should be wrapped by a `.control` element.
 <div class="control is-small">
     <input class="input" placeholder="john.doe@example.com" />
     <label class="label">Email</label>
+</div>
+
+<div class="control is-small">
+    <select class="input">
+        <option value="1">Value 1</option>
+        <option value="2">Value 2</option>
+        <option value="3">Value 3</option>
+    </select>
+
+    <label class="label">Select</label>
 </div>
 {% endhighlight %}

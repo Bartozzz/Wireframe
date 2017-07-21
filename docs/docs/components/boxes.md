@@ -99,3 +99,53 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
     </div>
 </div>
 {% endhighlight %}
+
+## Box as a container
+
+<div class="box prototype-grid">
+    <div class="box-main align-middle align-between">
+        <div class="box-content">
+            <div class="control is-small">
+                <input class="input" placeholder="Enter your username" />
+                <label class="label">Username</label>
+            </div>
+
+            <div class="control is-small">
+                <input class="input" placeholder="Enter your password" />
+                <label class="label">Password</label>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <ul class="list is-inline">
+                <li><button class="button pill-left">Reset</button></li>
+                <li><button class="button pill-right">Login</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% highlight html %}
+<div class="box">
+    <div class="box-main align-middle align-between">
+        <div class="box-content">
+            <div class="control is-small">
+                <input class="input" placeholder="Enter your username" />
+                <label class="label">Username</label>
+            </div>
+
+            <div class="control is-small">
+                <input class="input" placeholder="Enter your password" />
+                <label class="label">Password</label>
+            </div>
+        </div>
+
+        <div class="box-content">
+            <ul class="list is-inline">
+                <li><button class="button pill-left">Reset</button></li>
+                <li><button class="button pill-right">Login</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endhighlight %}
