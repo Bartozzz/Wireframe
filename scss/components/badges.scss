@@ -1,5 +1,9 @@
 .badge {
+    @extend .is-unselectable;
+
     display: inline-flex;
+
+    text-align: center;
     align-items: center;
     justify-content: center;
 
@@ -13,8 +17,7 @@
     background-color: black;
     border-radius: 8px;
 
-    text-align: center;
-    text-decoration: none;
+    cursor: pointer;
 
     &-icon {
         flex-basis: 60px;
