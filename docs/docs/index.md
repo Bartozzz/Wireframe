@@ -24,7 +24,7 @@ Wireframe follows a specific folder structure, which you can follow as well in y
 wireframe-framework/
 ├── css/
 │   └── index.css         -- compiled bundle (all-in-one)
-└── scss/
+├── scss/
 │   ├── configuration/    -- global variables, site-wide settings, config
 │   ├── components/       -- discrete, complete parts of UI such as forms
 │   ├── content/          -- unclassed HTML elements, such as typography
