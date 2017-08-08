@@ -10,9 +10,10 @@
             {% assign link_slug = link.title | slugify %}
             {% assign group_slug = group.title | slugify %}
             {% assign active = nil %}
+            {% capture drawer_url %}{{ "/docs/" | append: group_slug | append: "/" | append: link_slug | append: ".html" }}{% endcapture%}
 
             <li class="menu-item is-title {% if page.group == group_slug %}is-active{% endif %}">
-                <a href="{{ site.baseurl }}/docs/{{ group_slug }}/{{ link_slug }}.html">
+                <a href="{{ drawer_url | relative_url }}">
                     {{ group.title }}
                 </a>
             </li>
@@ -20,9 +21,10 @@
             {% for doc in group.pages %}
                 {% assign doc_slug = doc.title | slugify %}
                 {% assign active = nil %}
+                {% capture drawer_item_url %}{{ "/docs/" | append: group_slug | append: "/" | append: doc_slug | append: ".html" }}{% endcapture%}
 
                 <li class="menu-item {% if page.group == group_slug and page_slug == doc_slug %}is-active{% endif %}">
-                    <a href="{{ site.baseurl }}/docs/{{ group_slug }}/{{ doc_slug }}.html">
+                    <a href="{{ drawer_item_url | relative_url }}">
                         {{ doc.title }}
                     </a>
                 </li>

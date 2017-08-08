@@ -17,11 +17,11 @@
         <nav class="header-menu">
             <ul>
                 <li class="header-menu-item {% if page.layout == "docs" %}is-active{% endif %}">
-                    <a href="{{ site.baseurl }}/docs/">Docs</a>
+                    <a href="{{ "/docs/" | relative_url }}">Docs</a>
                 </li>
 
                 <li class="header-menu-item {% if page.layout == "examples" %}is-active{% endif %}">
-                    <a href="{{ site.baseurl }}/examples/">Examples</a>
+                    <a href="{{ "/examples/" | relative_url }}">Examples</a>
                 </li>
             </ul>
         </nav>

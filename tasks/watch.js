@@ -13,5 +13,5 @@ gulp.task( "watch", [ "sass", "docs-dev" ], () => {
     } );
 
     gulp.watch( `scss/**/*.scss`, [ "sass", sync.reload ] );
-    gulp.watch( [ `docs/**/*.*`, "!docs/{.sass-cache,.sass-cache/**,_site,_site/**}" ], [ "docs", sync.reload ] );
+    gulp.watch( [ `docs/**/*.*`, "!docs/{.sass-cache,.sass-cache/**,_site,_site/**}" ], [ "docs-dev", sync.reload ] );
 } );
