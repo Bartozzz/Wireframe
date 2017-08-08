@@ -1,15 +1,20 @@
 .typo {
     & > p,
-    & > ul {
+    & > ul,
+    & > dl,
+    & > ol {
         font-style: normal;
         font-family: $font-main;
+        font-feature-settings: "kern", "onum", "liga";
     }
 
     & > p {
         @include responsive-type(1rem, 1rem, $font-size);
     }
 
-    & > ul {
+    & > ul,
+    & > dl,
+    & > ol {
         line-height: 2rem;
 
         padding: 0 1rem;
@@ -23,6 +28,7 @@
 
         font-style: normal;
         font-family: $font-head;
+        font-feature-settings: "dlig", "liga", "lnum", "kern";
 
         text-rendering: geometricPrecision;
     }
@@ -51,6 +57,14 @@
         @include responsive-type(1rem, 1rem, $font-size);
     }
 
+    b, strong {
+        font-weight: 900;
+    }
+
+    em, i {
+        font-style: italic;
+    }
+
     mark {
         background-color: rgba(yellow, .35);
         padding: 0 .5rem;
@@ -58,5 +72,14 @@
         border-bottom-width: 2px;
         border-bottom-style: solid;
         border-bottom-color: rgba(yellow, .65);
+    }
+
+    abbr {
+        border-bottom-width: 1px;
+        border-bottom-style: dashed;
+    }
+
+    table {
+        font-feature-settings: "liga", "lnum", "tnum", "kern";
     }
 }
