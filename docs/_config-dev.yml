@@ -2,8 +2,8 @@
 title       : Wireframe
 email       : laniewski.bartozzz@gmail.com
 description : Wireframe, a flexible, modular SCSS framework for rapid application prototyping.
-baseurl     : "Wireframe"
-url         : "http://laniewski.me"
+baseurl     : ""
+url         : ""
 release     : 0.0.1
 
 # Build settings

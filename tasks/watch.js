@@ -2,7 +2,7 @@ const path = require( "path" );
 const gulp = require( "gulp" );
 const sync = require( "browser-sync" ).create();
 
-gulp.task( "watch", [ "sass", "docs" ], () => {
+gulp.task( "watch", [ "sass", "docs-dev" ], () => {
     sync.init( {
         open : false,
 
