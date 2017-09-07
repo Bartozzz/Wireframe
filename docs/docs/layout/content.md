@@ -3,8 +3,8 @@ layout: docs
 drawer: true
 title: Content
 files:
-    - wireframe-framework/scss/layout/content.scss
-    - wireframe-framework/scss/layout/block.scss
+    - ~wireframe-framework/scss/layout/content
+    - ~wireframe-framework/scss/layout/block
 ---
 
 <style>

@@ -1,4 +1,8 @@
+@import "../display/index";
+
 .align-middle {
+    @extend .is-flex;
+
     align-items: center;
     vertical-align: middle;
 }

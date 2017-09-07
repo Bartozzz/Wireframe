@@ -1,3 +1,5 @@
+@import "../functions/index";
+
 // @include responsive-type('14px@400px', '50px@1900px', '16px');
 // @include responsive-type('1.2@400px', '1.05@1900px', '16px');
 @mixin responsive-type($min, $max, $base) {

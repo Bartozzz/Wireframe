@@ -3,14 +3,14 @@ layout: docs
 drawer: true
 title: Align
 files:
-    - wireframe-framework/scss/utils/align/align-around.scss
-    - wireframe-framework/scss/utils/align/align-between.scss
-    - wireframe-framework/scss/utils/align/align-bottom.scss
-    - wireframe-framework/scss/utils/align/align-center.scss
-    - wireframe-framework/scss/utils/align/align-end.scss
-    - wireframe-framework/scss/utils/align/align-middle.scss
-    - wireframe-framework/scss/utils/align/align-start.scss
-    - wireframe-framework/scss/utils/align/align-top.scss
+    - ~wireframe-framework/scss/utils/align/align-around
+    - ~wireframe-framework/scss/utils/align/align-between
+    - ~wireframe-framework/scss/utils/align/align-bottom
+    - ~wireframe-framework/scss/utils/align/align-center
+    - ~wireframe-framework/scss/utils/align/align-end
+    - ~wireframe-framework/scss/utils/align/align-middle
+    - ~wireframe-framework/scss/utils/align/align-start
+    - ~wireframe-framework/scss/utils/align/align-top
 ---
 
 <style>

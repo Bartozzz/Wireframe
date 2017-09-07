@@ -1,51 +1,8 @@
 @charset "UTF-8";
 
-@import "configuration/functions/split-str",
-        "configuration/functions/strip-units",
-        "configuration/functions/to-length",
-        "configuration/functions/to-number",
-        "configuration/mixins/typography",
-        "configuration/mixins/responsive",
-        "configuration/mixins/clearfix",
-        "configuration/typography",
-        "configuration/responsive",
-        "configuration/colors";
-
-@import "utils/responsive/display",
-        "utils/prototype/grid",
-        "utils/display/flex",
-        "utils/display/rounded",
-        "utils/align/align-start",
-        "utils/align/align-center",
-        "utils/align/align-end",
-        "utils/align/align-top",
-        "utils/align/align-middle",
-        "utils/align/align-bottom",
-        "utils/align/align-around",
-        "utils/align/align-between",
-        "utils/is-unselectable",
-        "utils/is-reversed";
-
-@import "resets/normalize",
-        "resets/highlight",
-        "resets/global";
-
-@import "content/typography",
-        "content/table",
-        "content/list";
-
-@import "layout/app",
-        "layout/grid",
-        "layout/block",
-        "layout/content",
-        "layout/drawer",
-        "layout/footer",
-        "layout/header";
-
-@import "components/forms/control",
-        "components/forms/buttons",
-        "components/forms/inputs",
-        "components/box",
-        "components/menu",
-        "components/alerts",
-        "components/badges";
+@import "./configuration/index";
+@import "./utils/index";
+@import "./resets/index";
+@import "./content/index";
+@import "./layout/index";
+@import "./components/index";

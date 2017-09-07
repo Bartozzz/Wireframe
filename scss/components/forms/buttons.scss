@@ -1,3 +1,5 @@
+@import "../../configuration/index";
+
 @mixin state-button($color) {
     background-color: darken($color, 15%);
     border-color: darken($color, 15%);

@@ -1,4 +1,8 @@
+@import "../display/index";
+
 .align-top {
+    @extend .is-flex;
+
     align-items: flex-start;
     vertical-align: top;
 }

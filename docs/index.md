@@ -16,8 +16,8 @@ layout: default
 
                 <div class="block lg-6 xs-12">
 {% highlight scss %}
-@import "wireframe/components/grid";
-@import "wireframe/components/buttons";
+@import "~wireframe-framework/scss/components/grid";
+@import "~wireframe-framework/scss/components/buttons";
 {% endhighlight %}
 
 {% highlight html %}

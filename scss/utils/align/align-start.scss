@@ -1,4 +1,8 @@
+@import "../display/index";
+
 .align-start {
+    @extend .is-flex;
+
     justify-content: flex-start;
     text-align: start;
 }

@@ -1,3 +1,5 @@
+@import "../functions/index";
+
 @mixin screen($min, $max) {
     @media screen and (min-width: $min) and (max-width: $max) {
         @content;
