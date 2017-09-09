@@ -57,10 +57,6 @@ $spacing : 21px - $font-size + 1;
         justify-content: center;
 
         min-height: 4rem;
-
-        @include max-screen($tablet) {
-            height: 3.5rem;
-        }
     }
 
     &-header {
