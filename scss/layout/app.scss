@@ -36,8 +36,10 @@
 
         transition: left 200ms ease;
 
-        &.is-drawer-open {
-            left: 16rem;
+        @include max-screen($tablet) {
+            &.is-drawer-open {
+                left: 16rem;
+            }
         }
     }
 }
