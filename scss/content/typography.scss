@@ -70,15 +70,15 @@
         border-left-color: $color-text;
     }
 
-    b, strong {
+    & > b, & > strong {
         font-weight: 900;
     }
 
-    em, i {
+    & > em, & > i {
         font-style: italic;
     }
 
-    mark {
+    & > mark {
         background-color: rgba(yellow, .35);
         padding: 0 .5rem;
 
@@ -87,12 +87,12 @@
         border-bottom-color: rgba(yellow, .65);
     }
 
-    abbr {
+    & > abbr {
         border-bottom-width: 1px;
         border-bottom-style: dashed;
     }
 
-    table {
+    & > table {
         font-feature-settings: "liga", "lnum", "tnum", "kern";
     }
 }
