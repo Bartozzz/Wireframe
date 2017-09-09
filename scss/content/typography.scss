@@ -10,17 +10,18 @@
         font-feature-settings: "kern", "onum", "liga";
     }
 
-    & > p {
+    & > p,
+    & > ul,
+    & > dl,
+    & > ol {
         @include responsive-type(1rem, 1rem, $font-size);
     }
 
     & > ul,
     & > dl,
     & > ol {
-        line-height: 2rem;
-
-        padding: 0 1rem;
-        margin: 0 0 1rem 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     & > h1, & > h2, & > h3, & > h4, & > h5,& >  h6,

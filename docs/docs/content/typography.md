@@ -37,6 +37,27 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
             <small>This line of text is meant to be treated as fine print.</small><br>
             <mark>You can use the mark tag to highlight text.</mark>
         </p>
+
+        <ol>
+            <li>List item 1.0</li>
+            <li>List item 1.1</li>
+            <li>
+                List item 1.2
+                <ol>
+                    <li>List item 2.0</li>
+                    <li>List item 2.1</li>
+                    <li>
+                        List item 2.2
+                        <ol>
+                            <li>List item 3.0</li>
+                            <li>List item 3.1</li>
+                            <li>List item 3.2</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>List item 1.3</li>
+        </ol>
     </div>
 </section>
 
@@ -69,5 +90,26 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         <small>This line of text is meant to be treated as fine print.</small><br>
         <mark>You can use the mark tag to highlight text.</mark>
     </p>
+
+    <ol>
+        <li>List item 1.0</li>
+        <li>List item 1.1</li>
+        <li>
+            List item 1.2
+            <ol>
+                <li>List item 2.0</li>
+                <li>List item 2.1</li>
+                <li>
+                    List item 2.2
+                    <ol>
+                        <li>List item 3.0</li>
+                        <li>List item 3.1</li>
+                        <li>List item 3.2</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>List item 1.3</li>
+    </ol>
 </div>
 {% endhighlight %}
