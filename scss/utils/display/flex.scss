@@ -1,3 +1,6 @@
 .is-flex {
     display: flex;
+
+    flex-wrap: inherit;
+    flex-grow: 1;
 }
