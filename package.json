@@ -16,13 +16,13 @@
         "normalize.css": "latest"
     },
     "devDependencies": {
-        "node-sass": "https://github.com/sass/node-sass/tarball/master",
+        "node-sass": "latest",
         "require-dir": "^0.3.2",
-        "browser-sync": "^2.18.12",
+        "browser-sync": "^2.18.13",
         "gulp": "^3.9.1",
         "gulp-sass": "^3.1.0",
         "gulp-concat": "^2.6.1",
-        "gulp-clean-css": "^3.7.0",
+        "gulp-clean-css": "^3.8.0",
         "gulp-autoprefixer": "^4.0.0"
     },
     "scripts": {
