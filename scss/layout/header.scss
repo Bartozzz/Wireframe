@@ -23,10 +23,6 @@
     z-index: 1;
     -webkit-app-region: drag;
 
-    @include max-screen($tablet) {
-        height: 3.5rem;
-    }
-
     ul {
         display: flex;
         flex-direction: row;
