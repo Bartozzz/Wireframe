@@ -1,7 +1,5 @@
 var toggles = document.querySelectorAll( "[data-toggle]" );
 
-console.log( toggles );
-
 toggles.forEach( function ( toggle ) {
     toggle.addEventListener( "click", function ( event ) {
         event.preventDefault();
