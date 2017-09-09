@@ -26,12 +26,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 ## Default
 
 <div class="page">
-    <menu class="drawer is-unselectable">
+    <menu class="drawer is-unselectable" role="navigation">
         <header class="drawer-header">
             Drawer header
         </header>
 
-        <ul class="drawer-content menu">
+        <ul class="drawer-content menu" role="menu">
             <li class="menu-item is-title">
                 <a href="#">Group title</a>
             </li>
@@ -64,12 +64,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 </div>
 
 {% highlight html %}
-<menu class="drawer is-unselectable">
+<menu class="drawer is-unselectable" role="navigation">
     <header class="drawer-header">
         Drawer header
     </header>
 
-    <ul class="drawer-content menu">
+    <ul class="drawer-content menu" role="menu">
         <li class="menu-item is-title">
             <a href="#">Group title</a>
         </li>

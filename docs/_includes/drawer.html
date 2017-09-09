@@ -1,9 +1,9 @@
-<menu class="drawer is-unselectable">
+<menu class="drawer is-unselectable" role="navigation">
     <header class="drawer-header">
         <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     </header>
 
-    <ul class="drawer-content menu">
+    <ul class="drawer-content menu" role="menu">
         {% assign page_slug = page.url | split: '/' | last %}
         {% for group in site.data.nav %}
             {% assign link = group.pages | first %}

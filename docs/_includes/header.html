@@ -1,7 +1,7 @@
 <header class="header is-unselectable">
     <div class="content align-between">
         <div class="header-menu">
-            <div class="drawer-toggle">
+            <div class="drawer-toggle" aria-label="Drawer">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -14,7 +14,7 @@
             {% endif %}
         </div>
 
-        <nav class="header-menu">
+        <nav class="header-menu" role="menu">
             <ul>
                 <li class="header-menu-item {% if page.layout == "docs" %}is-active{% endif %}">
                     <a href="{{ "/docs/" | relative_url }}">Docs</a>

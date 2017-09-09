@@ -30,7 +30,7 @@ Toggleable on mobiles.
     <header class="header is-unselectable">
         <div class="content align-between">
             <div class="header-menu">
-                <div class="drawer-toggle">
+                <div class="drawer-toggle" aria-label="Drawer">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -41,7 +41,7 @@ Toggleable on mobiles.
                 </div>
             </div>
 
-            <nav class="header-menu">
+            <nav class="header-menu" role="menu">
                 <ul>
                     <li class="header-menu-item is-active">Item 1</li>
                     <li class="header-menu-item">Item 2</li>
@@ -55,7 +55,7 @@ Toggleable on mobiles.
 <header class="header is-unselectable">
     <div class="content align-between">
         <div class="header-menu">
-            <div class="drawer-toggle">
+            <div class="drawer-toggle" aria-label="Drawer">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -66,7 +66,7 @@ Toggleable on mobiles.
             </div>
         </div>
 
-        <nav class="header-menu">
+        <nav class="header-menu" role="menu">
             <ul>
                 <li class="header-menu-item is-active">Item 1</li>
                 <li class="header-menu-item">Item 2</li>
@@ -82,24 +82,24 @@ Scrollable on mobiles.
 
 <div class="page">
     <header class="header align-end">
-        <div class="header-menu is-fluid">
-            <div class="button is-rounded">Sub-item 1</div>
-            <div class="button is-rounded is-outline">Sub-item 2</div>
-            <div class="button is-rounded is-outline">Sub-item 3</div>
-            <div class="button is-rounded is-outline">Sub-item 4</div>
-            <div class="button is-rounded is-outline">Sub-item 5</div>
-        </div>
+        <ul class="header-menu is-fluid" role="menu">
+            <li class="button is-rounded">Sub-item 1</li>
+            <li class="button is-rounded is-outline">Sub-item 2</li>
+            <li class="button is-rounded is-outline">Sub-item 3</li>
+            <li class="button is-rounded is-outline">Sub-item 4</li>
+            <li class="button is-rounded is-outline">Sub-item 5</li>
+        </ul>
     </header>
 </div>
 
 {% highlight html %}
 <header class="header align-end">
-    <div class="header-menu is-fluid">
-        <div class="button is-rounded">Sub-item 1</div>
-        <div class="button is-rounded is-outline">Sub-item 2</div>
-        <div class="button is-rounded is-outline">Sub-item 3</div>
-        <div class="button is-rounded is-outline">Sub-item 4</div>
-        <div class="button is-rounded is-outline">Sub-item 5</div>
-    </div>
+    <ul class="header-menu is-fluid" role="menu">
+        <li class="button is-rounded">Sub-item 1</li>
+        <li class="button is-rounded is-outline">Sub-item 2</li>
+        <li class="button is-rounded is-outline">Sub-item 3</li>
+        <li class="button is-rounded is-outline">Sub-item 4</li>
+        <li class="button is-rounded is-outline">Sub-item 5</li>
+    </ul>
 </header>
 {% endhighlight %}

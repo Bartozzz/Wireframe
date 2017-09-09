@@ -23,64 +23,64 @@ Every form element should be wrapped by a `.control` element.
 ### Buttons
 
 <div class="control">
-    <button class="button"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
-    <button class="button is-rounded">Rounded button</button>
-    <button class="button is-outline">Outlined button</button>
-    <button class="button is-invisible">Invisible button</button>
-    <button class="button is-disabled">Disabled button</button>
-    <button class="button is-full">Wull-width button</button>
+    <button class="button" role="button"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
+    <button class="button is-rounded" role="button">Rounded button</button>
+    <button class="button is-outline" role="button">Outlined button</button>
+    <button class="button is-invisible" role="button">Invisible button</button>
+    <button class="button is-disabled" role="button">Disabled button</button>
+    <button class="button is-full" role="button">Wull-width button</button>
 </div>
 
 {% highlight html %}
-<button class="button"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
-<button class="button is-rounded">Rounded button</button>
-<button class="button is-outline">Outlined button</button>
-<button class="button is-invisible">Invisible button</button>
-<button class="button is-disabled">Disabled button</button>
-<button class="button is-full">Wull-width button</button>
+<button class="button" role="button"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
+<button class="button is-rounded" role="button">Rounded button</button>
+<button class="button is-outline" role="button">Outlined button</button>
+<button class="button is-invisible" role="button">Invisible button</button>
+<button class="button is-disabled" role="button">Disabled button</button>
+<button class="button is-full" role="button">Wull-width button</button>
 {% endhighlight %}
 
 #### Mixed buttons:
 
 <div class="control">
-    <button class="button is-rounded is-outline"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
+    <button class="button is-rounded is-outline" role="button"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
 </div>
 
 {% highlight html %}
-<button class="button is-rounded is-outline"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
+<button class="button is-rounded is-outline" role="button"><i class="icon fa fa-thumbs-o-up" aria-hidden="true"></i> Button</button>
 {% endhighlight %}
 
 #### Pilled buttons:
 
 <ul class="list is-inline">
-    <li><button class="button pill-left">Button</button></li>
-    <li><button class="button">Button</button></li>
-    <li><button class="button pill-right">Button</button></li>
+    <li><button class="button pill-left" role="button">Button</button></li>
+    <li><button class="button" role="button">Button</button></li>
+    <li><button class="button pill-right" role="button">Button</button></li>
 </ul>
 
 {% highlight html %}
 <ul class="list is-inline">
-    <li><button class="button pill-left">Button</button></li>
-    <li><button class="button">Button</button></li>
-    <li><button class="button pill-right">Button</button></li>
+    <li><button class="button pill-left" role="button">Button</button></li>
+    <li><button class="button" role="button">Button</button></li>
+    <li><button class="button pill-right" role="button">Button</button></li>
 </ul>
 {% endhighlight %}
 
 #### State buttons:
 
 <div class="control">
-    <button class="button is-success">Button</button>
-    <button class="button is-info">Button</button>
-    <button class="button is-warning">Button</button>
-    <button class="button is-danger">Button</button>
+    <button class="button is-success" role="button">Button</button>
+    <button class="button is-info" role="button">Button</button>
+    <button class="button is-warning" role="button">Button</button>
+    <button class="button is-danger" role="button">Button</button>
 </div>
 
 {% highlight html %}
-<div class="control">
-    <button class="button is-success">Button</button>
-    <button class="button is-info">Button</button>
-    <button class="button is-warning">Button</button>
-    <button class="button is-danger">Button</button>
+<div class="control" role="button">
+    <button class="button is-success" role="button">Button</button>
+    <button class="button is-info" role="button">Button</button>
+    <button class="button is-warning" role="button">Button</button>
+    <button class="button is-danger" role="button">Button</button>
 </div>
 {% endhighlight %}
 

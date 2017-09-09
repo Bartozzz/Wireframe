@@ -29,7 +29,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 <div class="page">
     <footer class="footer">
-        <ul class="list is-extended is-stacking">
+        <ul class="list is-extended is-stacking" role="menu">
             <li class="is-espaced"><a href="#">Informations</a></li>
             <li class="is-espaced"><a href="#">Terms of service</a></li>
             <li class="is-espaced"><a href="#">Press</a></li>
@@ -43,7 +43,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 {% highlight html %}
 <footer class="footer">
-    <ul class="list is-extended is-stacking">
+    <ul class="list is-extended is-stacking" role="menu">
         <li class="is-espaced"><a href="#">Informations</a></li>
         <li class="is-espaced"><a href="#">Terms of service</a></li>
         <li class="is-espaced"><a href="#">Press</a></li>
