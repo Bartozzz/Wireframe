@@ -60,6 +60,16 @@
         @include responsive-type(1rem, 1rem, $font-size);
     }
 
+    & > blockquote {
+        @include responsive-type(1rem, 1rem, $font-size);
+
+        padding-left: .75rem;
+
+        border-left-width: .25rem;
+        border-left-style: solid;
+        border-left-color: $color-text;
+    }
+
     b, strong {
         font-weight: 900;
     }

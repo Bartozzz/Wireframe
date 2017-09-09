@@ -38,6 +38,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
             <mark>You can use the mark tag to highlight text.</mark>
         </p>
 
+        <blockquote>
+            This is an example quotation that uses the blockquote tag.<br>
+            - Someone
+        </blockquote>
+
         <ol>
             <li>List item 1.0</li>
             <li>List item 1.1</li>
@@ -90,6 +95,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
         <small>This line of text is meant to be treated as fine print.</small><br>
         <mark>You can use the mark tag to highlight text.</mark>
     </p>
+
+    <blockquote>
+        This is an example quotation that uses the blockquote tag.<br>
+        - Someone
+    </blockquote>
 
     <ol>
         <li>List item 1.0</li>
