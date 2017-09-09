@@ -24,11 +24,20 @@
     }
 
     &-container {
+        position: relative;
+        left: 0;
+
         display: flex;
         flex-grow: 1;
         flex-direction: column;
 
         max-width: 100%;
         max-height: 100%;
+
+        transition: left 200ms ease;
+
+        &.is-drawer-open {
+            left: 16rem;
+        }
     }
 }

@@ -28,7 +28,7 @@
             {% include drawer.html %}
         {% endif %}
 
-        <main class="app-container">
+        <main class="app-container" id="container">
             {% include header.html %}
 
             <div class="app-scroll" role="main">
@@ -37,5 +37,7 @@
                 {% include footer.html %}
             </div>
         </main>
+
+        <script src="{{ "/assets/scripts/drawer.js" | relative_url }}"></script>
     </body>
 </html>
