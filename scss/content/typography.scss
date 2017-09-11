@@ -1,19 +1,15 @@
 @import "../configuration/index";
 
 .typo {
-    & > p,
-    & > ul,
-    & > dl,
-    & > ol {
-        font-style: normal;
-        font-family: $font-main;
-        font-feature-settings: "kern", "onum", "liga";
-    }
+    text-rendering: geometricPrecision;
 
     & > p,
     & > ul,
     & > dl,
     & > ol {
+        font-family: $font-main;
+        font-feature-settings: "kern", "onum", "liga";
+
         @include responsive-type(1rem, 1rem, $font-size);
     }
 
@@ -24,41 +20,18 @@
         padding-right: 1rem;
     }
 
-    & > h1, & > h2, & > h3, & > h4, & > h5,& >  h6,
+    & >  h1, & >  h2, & >  h3, & >  h4, & >  h5,& >   h6,
     & > .h1, & > .h2, & > .h3, & > .h4, & > .h5, & > .h6 {
-        margin: 0;
-        padding: 0;
-
-        font-style: normal;
         font-family: $font-head;
         font-feature-settings: "dlig", "liga", "lnum", "kern";
-
-        text-rendering: geometricPrecision;
     }
 
-    & > h1, & > .h1 {
-        @include responsive-type(2rem, 3.5rem, $font-size);
-    }
-
-    & > h2, & > .h2 {
-        @include responsive-type(2rem, 3rem, $font-size);
-    }
-
-    & > h3, & > .h3 {
-        @include responsive-type(2rem, 2.5rem, $font-size);
-    }
-
-    & > h4, & > .h4 {
-        @include responsive-type(2rem, 2rem, $font-size);
-    }
-
-    & > h5, & > .h5 {
-        @include responsive-type(2rem, 1.5rem, $font-size);
-    }
-
-    & > h6, & > .h6 {
-        @include responsive-type(1rem, 1rem, $font-size);
-    }
+    & > h1, & > .h1 { @include responsive-type(3.00rem, 3.00rem, $font-size); }
+    & > h2, & > .h2 { @include responsive-type(2.00rem, 2.00rem, $font-size); }
+    & > h3, & > .h3 { @include responsive-type(1.75rem, 1.75rem, $font-size); }
+    & > h4, & > .h4 { @include responsive-type(1.50rem, 1.50rem, $font-size); }
+    & > h5, & > .h5 { @include responsive-type(1.25rem, 1.25rem, $font-size); }
+    & > h6, & > .h6 { @include responsive-type(1.25rem, 1.25rem, $font-size); }
 
     & > blockquote {
         @include responsive-type(1rem, 1rem, $font-size);
@@ -68,23 +41,6 @@
         border-left-width: .25rem;
         border-left-style: solid;
         border-left-color: $color-text;
-    }
-
-    & > b, & > strong {
-        font-weight: 900;
-    }
-
-    & > em, & > i {
-        font-style: italic;
-    }
-
-    & > mark {
-        background-color: rgba(yellow, .35);
-        padding: 0 .5rem;
-
-        border-bottom-width: 2px;
-        border-bottom-style: solid;
-        border-bottom-color: rgba(yellow, .65);
     }
 
     & > abbr {
