@@ -1,5 +1,7 @@
 # Wireframe
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Bartozzz/Wireframe.svg)](https://greenkeeper.io/)
+
 [Wireframe](http://laniewski.me/Wireframe) is a flexible, modular and highly-customizable SCSS framework for rapid webiste prototyping. It provides you with a solid architectural baseline upon which to complete your own work.
 
 ## Installation
